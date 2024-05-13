@@ -1,0 +1,30 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "df30eee6-0632-11ef-b521-8b343a750e79",
+  "appTemplate": {
+    "mobileAppSettings": {
+      "object": {
+        "mobileOfflineModeEnabled": false,
+        "mobileOfflineModeDelaySync": false,
+        "displaySetting": {
+          "object": {
+            "landscapeMode": false,
+            "tabletMode": false
+          }
+        }
+      }
+    },
+    "appMaxWidth": "1560px",
+    "appThemeId": 92697,
+    "inAppRetoolPillAppearance": "HIDE_MENU",
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false
+      }
+    },
+    "appThemeName": "Orange",
+    "version": "3.53.0",
+    "experimentalDataTabEnabled": true
+  }
+}
