@@ -40,33 +40,6 @@
       marginType="normal"
     />
     <Statistic
-      id="enterpriseStatistic"
-      _disclosedFields={{ array: ["negative"] }}
-      currency="USD"
-      label="Enterprise Count"
-      marginType="normal"
-      positiveTrend="{{ self.value >= 0 }}"
-      secondaryCurrency="USD"
-      secondaryDecimalPlaces="0"
-      secondaryEnableTrend={true}
-      secondaryFormattingStyle="percent"
-      secondaryPositiveTrend="{{ self.secondaryValue >= 0 }}"
-      secondaryShowSeparators={true}
-      secondarySignDisplay="trendArrows"
-      secondaryValue=""
-      showSeparators={true}
-      style={{
-        ordered: [
-          { negative: "danger" },
-          { color: "" },
-          { caption: "" },
-          { positive: "" },
-          { iconBackground: "" },
-        ],
-      }}
-      value="{{paymentPlans.data.count['0']}}"
-    />
-    <Statistic
       id="transactionStatistic"
       _disclosedFields={{ array: [] }}
       decimalPlaces="2"
@@ -110,6 +83,33 @@
         ],
       }}
       value="{{new Set(getData.data.company).size}}"
+    />
+    <Statistic
+      id="enterpriseStatistic"
+      _disclosedFields={{ array: ["negative"] }}
+      currency="USD"
+      label="Enterprise Count"
+      marginType="normal"
+      positiveTrend="{{ self.value >= 0 }}"
+      secondaryCurrency="USD"
+      secondaryDecimalPlaces="0"
+      secondaryEnableTrend={true}
+      secondaryFormattingStyle="percent"
+      secondaryPositiveTrend="{{ self.secondaryValue >= 0 }}"
+      secondaryShowSeparators={true}
+      secondarySignDisplay="trendArrows"
+      secondaryValue=""
+      showSeparators={true}
+      style={{
+        ordered: [
+          { negative: "danger" },
+          { color: "" },
+          { caption: "" },
+          { positive: "" },
+          { iconBackground: "" },
+        ],
+      }}
+      value="{{paymentPlans.data.count['0']}}"
     />
     <PlotlyChart
       id="transactionsChart"

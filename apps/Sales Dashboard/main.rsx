@@ -26,6 +26,7 @@
       value="### Transactions Dashboard"
       verticalAlign="center"
     />
+    <Include src="./src/container1.rsx" />
     <Container
       id="container2"
       footerPaddingType="normal"
@@ -77,7 +78,6 @@
         />
       </View>
     </Container>
-    <Include src="./src/container1.rsx" />
     <Include src="./src/container3.rsx" />
   </Frame>
 </App>
