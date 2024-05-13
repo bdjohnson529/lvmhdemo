@@ -23,7 +23,7 @@
           { links: "" },
         ],
       }}
-      value="### Transactions Dashboard"
+      value="# {{retoolContext.configVars.house_name}} Sales"
       verticalAlign="center"
     />
     <Include src="./src/container1.rsx" />
