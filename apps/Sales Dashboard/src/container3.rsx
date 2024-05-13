@@ -138,9 +138,9 @@
         id="34316"
         alignment="right"
         editable={false}
-        editableOptions={{ showStepper: true }}
+        editableOptions={{ map: { showStepper: true } }}
         format="decimal"
-        formatOptions={{ showSeparators: true }}
+        formatOptions={{ map: { showSeparators: true } }}
         key="id"
         label="ID"
         placeholder="Enter value"
@@ -181,7 +181,7 @@
         id="bb40b"
         alignment="left"
         format="tag"
-        formatOptions={{ automaticColors: true }}
+        formatOptions={{ map: { automaticColors: true } }}
         key="payment_type"
         label="Payment type"
         placeholder="Select option"
@@ -193,7 +193,7 @@
         id="b926b"
         alignment="left"
         format="tag"
-        formatOptions={{ automaticColors: true }}
+        formatOptions={{ map: { automaticColors: true } }}
         key="plan"
         label="Plan"
         placeholder="Select option"
