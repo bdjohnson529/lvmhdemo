@@ -16,14 +16,14 @@
       }
     },
     "appMaxWidth": "1560px",
-    "appThemeId": 92697,
+    "appThemeId": 92698,
     "inAppRetoolPillAppearance": "HIDE_MENU",
     "experimentalFeatures": {
       "object": {
         "sourceControlTemplateDehydration": false
       }
     },
-    "appThemeName": "Orange",
+    "appThemeName": "House",
     "shortlink": "sales",
     "version": "3.53.0",
     "experimentalDataTabEnabled": true
