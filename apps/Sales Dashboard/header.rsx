@@ -9,6 +9,8 @@
 >
   <Image
     id="image2"
+    fit="contain"
+    heightType="fixed"
     horizontalAlign="center"
     retoolStorageDynamicInput={true}
     retoolStorageFileId="{{ logo_url.value }}"
