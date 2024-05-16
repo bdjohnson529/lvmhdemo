@@ -31,7 +31,8 @@
     <Image
       id="image1"
       horizontalAlign="center"
-      retoolStorageFileId="7fe1a987-df12-468d-b878-3c58ca4e7e57"
+      retoolStorageDynamicInput={true}
+      retoolStorageFileId="{{ image_url.value }}"
       src="https://picsum.photos/id/1025/800/600"
       srcType="retoolStorageFileId"
     />

@@ -23,6 +23,13 @@
         "sourceControlTemplateDehydration": false
       }
     },
+    "pageCodeFolders": {
+      "object": {
+        "image_url": {
+          "array": []
+        }
+      }
+    },
     "appThemeName": "House",
     "shortlink": "sales",
     "version": "3.54.0",
