@@ -20,26 +20,6 @@
     />
   </Header>
   <View id="bbeb8" viewKey="View 1">
-    <Text
-      id="text1"
-      _defaultValue=""
-      _disclosedFields={{ array: ["color"] }}
-      marginType="normal"
-      style={{
-        ordered: [
-          { color: "rgb(56, 73, 136)" },
-          { background: "" },
-          { links: "" },
-        ],
-      }}
-      value="#### Production Statistics"
-      verticalAlign="center"
-    />
-    <Divider
-      id="divider1"
-      _disclosedFields={{ array: [] }}
-      marginType="normal"
-    />
     <Statistic
       id="transactionStatistic"
       _disclosedFields={{ array: [] }}
