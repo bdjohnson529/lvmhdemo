@@ -7,7 +7,10 @@
   padding="8px 12px"
   paddingType="normal"
   style={{
-    ordered: [{ background: "primary" }, { border: "rgb(250, 250, 250)" }],
+    ordered: [
+      { background: "rgba(255, 255, 255, 1)" },
+      { border: "rgb(250, 250, 250)" },
+    ],
   }}
 >
   <Navigation
