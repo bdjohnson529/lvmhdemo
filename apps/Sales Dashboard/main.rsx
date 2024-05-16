@@ -29,6 +29,14 @@
       verticalAlign="center"
     />
     <Image
+      id="image2"
+      horizontalAlign="center"
+      retoolStorageDynamicInput={true}
+      retoolStorageFileId="{{ logo_url.value }}"
+      src="https://picsum.photos/id/1025/800/600"
+      srcType="retoolStorageFileId"
+    />
+    <Image
       id="image1"
       horizontalAlign="center"
       retoolStorageDynamicInput={true}

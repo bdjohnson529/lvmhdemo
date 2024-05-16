@@ -27,6 +27,9 @@
       "object": {
         "image_url": {
           "array": []
+        },
+        "logo_url": {
+          "array": []
         }
       }
     },
