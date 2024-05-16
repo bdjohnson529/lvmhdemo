@@ -6,12 +6,7 @@
   isInEditMode={false}
   padding="8px 12px"
   paddingType="normal"
-  style={{
-    ordered: [
-      { background: "rgba(255, 255, 255, 1)" },
-      { border: "rgb(250, 250, 250)" },
-    ],
-  }}
+  style={{ ordered: [{ background: "rgba(255, 255, 255, 1)" }] }}
 >
   <Navigation
     id="navigation2"
@@ -31,14 +26,15 @@
     marginType="normal"
     orientation="vertical"
     parentKeyByIndex=""
+    retoolFileObject={{ ordered: [] }}
     showInEditor={null}
-    src="https://user-images.githubusercontent.com/75338857/230197519-f8d2138a-9f87-478e-850a-9c26bff8d988.png"
     style={{
       ordered: [
         { dropdownBackground: null },
         { color: "rgba(0, 0, 0, 1)" },
         { dropdownBorder: "rgba(40, 40, 40, 1)" },
         { highlightText: "rgba(0, 0, 0, 1)" },
+        { highlightBackground: "rgba(113, 113, 113, 0.2)" },
       ],
     }}
     tooltipByIndex=""
@@ -58,7 +54,7 @@
       highlight="true"
       iconPosition="left"
       itemType="custom"
-      label=" Transactions"
+      label="Production"
     />
     <Option
       id="94ca9"
@@ -66,7 +62,7 @@
       hidden={false}
       iconPosition="left"
       itemType="custom"
-      label="Resources"
+      label="Quality Control"
     />
     <Option
       id="5a949"
@@ -74,7 +70,7 @@
       hidden={false}
       iconPosition="left"
       itemType="app"
-      label="Sales"
+      label="Supply Chain"
     />
     <Option
       id="84085"
@@ -83,7 +79,15 @@
       iconPosition="left"
       itemType="custom"
       key="1a152"
-      label="Workflows"
+      label="Sales"
     />
   </Navigation>
+  <Image
+    id="image1"
+    horizontalAlign="center"
+    retoolStorageDynamicInput={true}
+    retoolStorageFileId="{{ image_url.value }}"
+    src="https://picsum.photos/id/1025/800/600"
+    srcType="retoolStorageFileId"
+  />
 </SidebarFrame>
