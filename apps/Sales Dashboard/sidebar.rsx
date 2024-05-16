@@ -84,6 +84,8 @@
   </Navigation>
   <Image
     id="image1"
+    fit="contain"
+    heightType="fixed"
     horizontalAlign="center"
     retoolStorageDynamicInput={true}
     retoolStorageFileId="{{ image_url.value }}"

@@ -11,7 +11,6 @@
     id="image2"
     fit="contain"
     heightType="fixed"
-    horizontalAlign="center"
     retoolStorageDynamicInput={true}
     retoolStorageFileId="{{ logo_url.value }}"
     src="https://picsum.photos/id/1025/800/600"
