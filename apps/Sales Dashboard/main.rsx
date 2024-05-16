@@ -19,11 +19,7 @@
       _disclosedFields={{ array: ["color"] }}
       marginType="normal"
       style={{
-        ordered: [
-          { color: "rgb(56, 73, 136)" },
-          { background: "" },
-          { links: "" },
-        ],
+        ordered: [{ color: "primary" }, { background: "" }, { links: "" }],
       }}
       value="# {{retoolContext.configVars.house_name}} Production Dashboard"
       verticalAlign="center"
@@ -34,11 +30,7 @@
       _disclosedFields={{ array: ["color"] }}
       marginType="normal"
       style={{
-        ordered: [
-          { color: "rgb(56, 73, 136)" },
-          { background: "" },
-          { links: "" },
-        ],
+        ordered: [{ color: "primary" }, { background: "" }, { links: "" }],
       }}
       value="### Production Statistics"
       verticalAlign="center"
@@ -128,6 +120,7 @@
       datasourcePluginId="getData"
       datasourcePluginType="plugin"
       isDataTemplateDirty={true}
+      isJsonTemplateDirty={true}
       layout={include("./lib/planChart.layout.json", "string")}
       xAxis="{{getData.data['vineyard']}}"
       xAxisDropdown="vineyard"
@@ -138,11 +131,7 @@
       _disclosedFields={{ array: ["color"] }}
       marginType="normal"
       style={{
-        ordered: [
-          { color: "rgb(56, 73, 136)" },
-          { background: "" },
-          { links: "" },
-        ],
+        ordered: [{ color: "primary" }, { background: "" }, { links: "" }],
       }}
       value="### Batch Production"
       verticalAlign="center"

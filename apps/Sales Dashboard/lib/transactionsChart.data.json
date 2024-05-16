@@ -1,0 +1,63 @@
+[
+  {
+    "name": "transactions",
+    "x": {{getData.data['transaction_date']}},
+    "y": {{getData.data}},
+    "type": "line",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "groupby",
+        "groups": {{getData.data['vineyard']}},
+        "styles": [
+          {
+            "target": {{_.uniq(getData.data['vineyard'])[0]}},
+            "value": {
+              "marker": {
+                "color": {{theme.primary}}
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(getData.data['vineyard'])[1]}},
+            "value": {
+              "marker": {
+                "color": {{theme.secondary}}
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(getData.data['vineyard'])[2]}},
+            "value": {
+              "marker": {
+                "color": {{theme.tertiary}}
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(getData.data['vineyard'])[3]}},
+            "value": {
+              "marker": {
+                "color": {{theme.primary}}
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(getData.data['vineyard'])[4]}},
+            "value": {
+              "marker": {
+                "color": {{theme.secondary}}
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "target": {{getData.data['transaction_date']}},
+        "order": "ascending"
+      }
+    ],
+    "mode": "lines+markers"
+  }
+]

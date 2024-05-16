@@ -98,6 +98,7 @@
     <PlotlyChart
       id="transactionsChart"
       chartType="line"
+      data={include("../lib/transactionsChart.data.json", "string")}
       dataseries={{
         ordered: [
           {
@@ -136,6 +137,7 @@
       groupByDropdown="vineyard"
       groupByJS="{{getData.data['vineyard']}}"
       isDataTemplateDirty={true}
+      isJsonTemplateDirty={true}
       layout={include("../lib/transactionsChart.layout.json", "string")}
       xAxis="{{getData.data['transaction_date']}}"
       xAxisDropdown="transaction_date"
