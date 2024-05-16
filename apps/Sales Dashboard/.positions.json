@@ -7,7 +7,6 @@
   "companyStatistic": {
     "container": "container1",
     "subcontainer": "bbeb8",
-    "row": 0,
     "col": 4,
     "height": 0.8,
     "width": 4
@@ -26,7 +25,6 @@
   "enterpriseStatistic": {
     "container": "container1",
     "subcontainer": "bbeb8",
-    "row": 0,
     "col": 8,
     "height": 0.8,
     "width": 4
@@ -70,7 +68,6 @@
   "transactionStatistic": {
     "container": "container1",
     "subcontainer": "bbeb8",
-    "row": 0,
     "height": 0.8,
     "width": 4
   },
