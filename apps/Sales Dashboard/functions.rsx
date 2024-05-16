@@ -46,4 +46,5 @@ return data"
   />
   <Function id="image_url" funcBody={include("./lib/image_url.js", "string")} />
   <Function id="logo_url" funcBody={include("./lib/logo_url.js", "string")} />
+  <Function id="transformer3" />
 </GlobalFunctions>
