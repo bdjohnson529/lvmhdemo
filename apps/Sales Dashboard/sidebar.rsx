@@ -33,7 +33,7 @@
     style={{
       ordered: [
         { dropdownBackground: null },
-        { color: "rgba(255, 255, 255, 1)" },
+        { color: "rgba(0, 0, 0, 1)" },
         { dropdownBorder: "rgba(40, 40, 40, 1)" },
         { highlightText: "rgba(0, 0, 0, 1)" },
       ],

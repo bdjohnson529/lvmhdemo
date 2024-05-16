@@ -4,6 +4,7 @@
   headerPaddingType="normal"
   hoistFetching={true}
   marginType="normal"
+  padding="12px"
   paddingType="normal"
   showBody={true}
   style={{ ordered: [{ border: "rgba(255, 255, 255, 1)" }] }}
