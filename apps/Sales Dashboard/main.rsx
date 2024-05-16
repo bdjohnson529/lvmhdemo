@@ -43,6 +43,7 @@
       value="### Production Statistics"
       verticalAlign="center"
     />
+    <Include src="./src/container1.rsx" />
     <PlotlyChart
       id="planChart"
       chartType="pie"
@@ -131,7 +132,6 @@
       xAxis="{{getData.data['vineyard']}}"
       xAxisDropdown="vineyard"
     />
-    <Include src="./src/container1.rsx" />
     <Text
       id="text13"
       _defaultValue=""
