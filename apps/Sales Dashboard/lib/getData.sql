@@ -1,1 +1,1 @@
-select * from sample_transactions
+select * from sample_batches

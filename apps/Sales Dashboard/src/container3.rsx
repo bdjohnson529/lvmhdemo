@@ -4,6 +4,7 @@
   headerPaddingType="normal"
   hoistFetching={true}
   marginType="normal"
+  padding="12px"
   paddingType="normal"
   showBody={true}
   showHeader={true}
@@ -15,7 +16,7 @@
       _disclosedFields={{ array: ["color"] }}
       marginType="normal"
       style={{ ordered: [{ color: "rgb(56, 73, 136)" }] }}
-      value="#### Transactions Admin Panel"
+      value="#### Batch Production"
       verticalAlign="center"
     />
   </Header>
@@ -94,7 +95,7 @@
               {
                 0: {
                   ordered: [
-                    { label: "revenue" },
+                    { label: "Liters" },
                     { datasource: "{{chartData.data['revenue']}}" },
                     { chartType: "bar" },
                     { aggregationType: "sum" },
@@ -111,8 +112,10 @@
             ],
           }}
           datasourceDataType="object"
-          datasourceInputMode="javascript"
           datasourceJS="{{chartData.data}}"
+          datasourcePluginId="chartData"
+          datasourcePluginType="plugin"
+          isDataTemplateDirty={true}
           skipDatasourceUpdate={true}
           xAxis="{{chartData.data.month}}"
           xAxisDropdown="month"
@@ -126,7 +129,6 @@
       data="{{ getData.data }}"
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
       enableSaveActions={true}
-      primaryKeyColumnId="34316"
       searchTerm="{{companySearch.value}}"
       showBorder={true}
       showFooter={true}
@@ -145,27 +147,7 @@
         label="ID"
         placeholder="Enter value"
         position="center"
-        size={31.546875}
-      />
-      <Column
-        id="204e7"
-        alignment="left"
-        format="string"
-        key="account_number"
-        label="Account number"
-        placeholder="Enter value"
-        position="center"
-        size={112.609375}
-      />
-      <Column
-        id="bed6e"
-        alignment="left"
-        format="string"
-        key="company"
-        label="Company"
-        placeholder="Enter value"
-        position="center"
-        size={142.4375}
+        size={31.109375}
       />
       <Column
         id="b701c"
@@ -175,30 +157,49 @@
         label="Transaction date"
         placeholder="Enter value"
         position="center"
-        size={152.921875}
+        size={150.859375}
       />
       <Column
-        id="bb40b"
+        id="fe79d"
         alignment="left"
         format="tag"
         formatOptions={{ automaticColors: true }}
-        key="payment_type"
-        label="Payment type"
+        groupAggregationMode="none"
+        key="vineyard"
+        label="Vineyard"
         placeholder="Select option"
         position="center"
-        size={96}
+        size={188}
+        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
-        id="b926b"
+        id="3fe2a"
         alignment="left"
         format="tag"
         formatOptions={{ automaticColors: true }}
-        key="plan"
-        label="Plan"
+        groupAggregationMode="none"
+        key="fermentation_method"
+        label="Fermentation method"
         placeholder="Select option"
         position="center"
-        size={90.9375}
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
+      />
+      <Column
+        id="f7547"
+        alignment="left"
+        format="tag"
+        formatOptions={{ automaticColors: true }}
+        groupAggregationMode="none"
+        key="wine_type"
+        label="Wine type"
+        placeholder="Select option"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
       />
       <Event
         event="selectRow"

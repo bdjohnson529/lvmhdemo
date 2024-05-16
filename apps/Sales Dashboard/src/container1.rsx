@@ -31,7 +31,7 @@
           { links: "" },
         ],
       }}
-      value="#### Transaction Statistics"
+      value="#### Production Statistics"
       verticalAlign="center"
     />
     <Divider
@@ -42,8 +42,9 @@
     <Statistic
       id="transactionStatistic"
       _disclosedFields={{ array: [] }}
+      align="center"
       decimalPlaces="2"
-      label="Transaction Count"
+      label="Total Batches"
       marginType="normal"
       positiveTrend="{{ self.value >= 0 }}"
       secondaryCurrency="USD"
@@ -60,8 +61,9 @@
     <Statistic
       id="companyStatistic"
       _disclosedFields={{ array: ["negative"] }}
+      align="center"
       currency="USD"
-      label="Company Count"
+      label="Pending Batches"
       marginType="normal"
       positiveTrend="{{ self.value >= 0 }}"
       secondaryCurrency="USD"
@@ -87,8 +89,9 @@
     <Statistic
       id="enterpriseStatistic"
       _disclosedFields={{ array: ["negative"] }}
+      align="center"
       currency="USD"
-      label="Enterprise Count"
+      label="Processed Batches"
       marginType="normal"
       positiveTrend="{{ self.value >= 0 }}"
       secondaryCurrency="USD"
@@ -127,9 +130,11 @@
                 {
                   colors: {
                     ordered: [
-                      { 0: "#033663" },
-                      { 1: "#247BC7" },
-                      { 2: "#55A1E3" },
+                      { 0: "#1E3A8A" },
+                      { 1: "#3170F9" },
+                      { 2: "#60A5FA" },
+                      { 3: "#DBEAFE" },
+                      { 4: "#FDE68A" },
                     ],
                   },
                 },
@@ -147,8 +152,8 @@
       datasourceJS="{{getData.data}}"
       datasourcePluginId="getData"
       datasourcePluginType="plugin"
-      groupByDropdown="plan"
-      groupByJS="{{getData.data['plan']}}"
+      groupByDropdown="vineyard"
+      groupByJS="{{getData.data['vineyard']}}"
       isDataTemplateDirty={true}
       layout={include("../lib/transactionsChart.layout.json", "string")}
       xAxis="{{getData.data['transaction_date']}}"
