@@ -16,7 +16,7 @@
       }
     },
     "appMaxWidth": "1560px",
-    "appThemeId": 93150,
+    "appThemeId": 92697,
     "inAppRetoolPillAppearance": "HIDE_MENU",
     "experimentalFeatures": {
       "object": {
@@ -35,7 +35,7 @@
     },
     "appThemeName": "House",
     "shortlink": "sales",
-    "version": "3.54.0",
+    "version": "3.55.0",
     "experimentalDataTabEnabled": true
   }
 }
