@@ -24,6 +24,7 @@
       value="# {{retoolContext.configVars.house_name}} Production Dashboard"
       verticalAlign="center"
     />
+    <TextInput id="textInput1" labelPosition="top" placeholder="Enter value" />
     <Text
       id="text1"
       _defaultValue=""

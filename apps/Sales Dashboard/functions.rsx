@@ -3,7 +3,7 @@
     id="getData"
     query={include("./lib/getData.sql", "string")}
     resourceDisplayName="retool_db"
-    resourceName="bf6b1297-5980-4688-a680-cad3a549287d"
+    resourceName="a884ca8b-78c8-40cb-a7b8-63f09952e703"
     resourceTypeOverride=""
     showSuccessToaster={false}
     transformer="// type your code here
@@ -16,7 +16,7 @@ return data"
     id="paymentPlans"
     query={include("./lib/paymentPlans.sql", "string")}
     resourceDisplayName="retool_db"
-    resourceName="bf6b1297-5980-4688-a680-cad3a549287d"
+    resourceName="a884ca8b-78c8-40cb-a7b8-63f09952e703"
     resourceTypeOverride=""
     showSuccessToaster={false}
     transformer="// type your code here
@@ -29,7 +29,7 @@ return data"
     id="numberOfCustomers"
     query={include("./lib/numberOfCustomers.sql", "string")}
     resourceDisplayName="retool_db"
-    resourceName="bf6b1297-5980-4688-a680-cad3a549287d"
+    resourceName="a884ca8b-78c8-40cb-a7b8-63f09952e703"
     resourceTypeOverride=""
     showSuccessToaster={false}
     transformer="// type your code here
